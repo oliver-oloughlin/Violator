@@ -1,4 +1,4 @@
-import { Bot, sendMessage, Member } from "discordeno"
+import { Bot, sendMessage, Member } from "https://deno.land/x/discordeno@17.0.0/mod.ts"
 import { LORD_ID, LORD_ODDS, TARGET_ID, TARGET_ODDS, ODDS, CHANNEL_ID, CREATOR_ID, CREATOR_ODDS } from "./constants.ts"
 
 type MessageType = "praise" | "violation" | "insult"

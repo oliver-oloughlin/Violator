@@ -1,6 +1,6 @@
-import { createBot, startBot, Intents } from "discordeno"
+import { createBot, startBot, Intents } from "https://deno.land/x/discordeno@17.0.0/mod.ts"
 import { send } from "./utils/message.ts"
-import "std/dotenv/load.ts"
+import "https://deno.land/std@0.160.0/dotenv/load.ts"
 
 const token = Deno.env.get("DISCORD_TOKEN")
 if (!token) throw Error("Token not initilized")

@@ -17,7 +17,7 @@ const bot = createBot({
       reactToMessage(bot, msg)
       setTimeout(() => {
         send(bot, msg)
-      }, 5_000 + Math.random() * 10_000)
+      }, 3_000 + Math.random() * 2_000)
     }
   }
 })

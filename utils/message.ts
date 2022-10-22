@@ -61,17 +61,18 @@ function getMessage(type: MessageType, name: string) {
       `${name} gets 5 stars on my admin rating!`
     ],
     insult: [
-      `${name} yo mama so uggers she would lay with SonElias!`,
       `If I saw you on the same sidewalk as me ${name} I would literally cross the street faster 
       than your dad left you.`,
-      `My nephew saw a picture of you ${name} and asked "What kind of homeless ferret is that?"`,
       `A fuckin sewage pipe has more charisma than you ${name}!`,
-      `Suck my D ${name}!`,
+      `Suck my shitty D ${name}!`,
       `Yo ${name}, who tf asked?!`,
       `Get Gaped ${name}`,
       `Oh oh ${name}, Downey alert!`,
       `${name} <-- Actual autistard in action right here`,
-      `${name} it's probably better if you stick to listening instead of talking my guy`
+      `${name} it's probably better if you stick to listening instead of talking my guy`,
+      `kys ${name}`,
+      `Please abort yourself ${name}`,
+      `${name} would run from a 1v1 with a fuckin ant`
     ],
     violation: [
       `${name} You have about as much of a hairline as you got bitches!`,
@@ -79,7 +80,10 @@ function getMessage(type: MessageType, name: string) {
       `A bird that swipes right on Shrek and his retarded donkey would still swipe left on ${name}`,
       `Eric Cartman lookin ass --> ${name}`,
       `${name}'s mom gotta have a wildly slippery cooch to deliver that monstrocity!`,
-      `Aaaand parents of the year award goes to ${name}'s mom and dad for NOT choosing abortion! (My god, I certainly would)`
+      `Aaaand parents of the year award goes to ${name}'s mom and dad for NOT choosing abortion! (My god, I certainly would)`,
+      `${name} kys, right now, no joke`,
+      `${name} is so short his micropenis is longer than his height`,
+      `Imagine being ${name}, waking up every day, and deciding to keep living after looking in the mirror?!?`
     ]
   }
 

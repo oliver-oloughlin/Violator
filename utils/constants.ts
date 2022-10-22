@@ -1,4 +1,4 @@
-export const TEST_ID = BigInt("228262516470448128")
+export const TEST_ID = BigInt("0") // Oliver: "228262516470448128"
 
 export const LORD_ID = BigInt("344481159767392256")
 

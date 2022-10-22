@@ -11,6 +11,7 @@ const bot = createBot({
   intents: Intents.GuildMessages,
   events: {
     ready: () => console.log("Successfully connected to gateway"),
+    
     messageCreate: (bot, msg) => {
       if (msg.isFromBot) return
       reactToMessage(bot, msg)

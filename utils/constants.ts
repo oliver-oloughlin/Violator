@@ -10,4 +10,4 @@ export const LORD_ODDS = 0.25
 
 export const TARGET_ODDS = 0.25
 
-export const ODDS = 0.075
+export const ODDS = 0.1

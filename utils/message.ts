@@ -72,10 +72,14 @@ function getMessage(type: MessageType, name: string) {
       `${name} it's probably better if you stick to listening instead of talking my guy`,
       `kys ${name}`,
       `Please abort yourself ${name}`,
-      `${name} would run from a 1v1 with a fuckin ant`
+      `${name} would run from a 1v1 with a fuckin ant`,
+      `${name} got them inward biceps`,
+      `${name}... now that's one dibbed looking motherfucker`,
+      `Hey ${name}, your mom got a stanker, but at least she move it good`,
+      `${name} buddy, jump off a bridge real quick will ya?`
     ],
     violation: [
-      `${name} You have about as much of a hairline as you got bitches!`,
+      `${name} you have about as much of a hairline as you got bitches!`,
       `Man so dibbed that an Oompa Loompa be lookin sexy af next to ${name}!`,
       `A bird that swipes right on Shrek and his retarded donkey would still swipe left on ${name}`,
       `Eric Cartman lookin ass --> ${name}`,
@@ -83,7 +87,10 @@ function getMessage(type: MessageType, name: string) {
       `Aaaand parents of the year award goes to ${name}'s mom and dad for NOT choosing abortion! (My god, I certainly would)`,
       `${name} kys, right now, no joke`,
       `${name} is so short his micropenis is longer than his height`,
-      `Imagine being ${name}, waking up every day, and deciding to keep living after looking in the mirror?!?`
+      `Imagine being ${name}, waking up every day, and deciding to keep living after looking in the mirror?!?`,
+      `Not even pedophiles could stand looking at ${name} when he was a kid`,
+      `Normal peen: 8====D, ${name}'s peen: 8=D`,
+      `${name} lookin like the slowest wank ever`
     ]
   }
 

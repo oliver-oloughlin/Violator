@@ -58,8 +58,7 @@ function getMessage(type: MessageType, name: string) {
       `${name} <-- This guy right here is the only acceptable ginger in the world, respect him!`,
       `${name} gimme that weiner, gobble gobble!`,
       `Henrik will never be the man that ${name} is!`,
-      `${name} gets 5 stars on my admin rating!`,
-      `Notice me senpai ${name}!`
+      `${name} gets 5 stars on my admin rating!`
     ],
     insult: [
       `${name} yo mama so uggers she would lay with SonElias!`,

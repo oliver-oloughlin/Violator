@@ -1,5 +1,5 @@
-import { Bot, sendMessage, Member } from "https://deno.land/x/discordeno@17.0.0/mod.ts"
-import { LORD_ID, LORD_ODDS, TARGET_ID, TARGET_ODDS, ODDS, CHANNEL_ID, CREATOR_ID, CREATOR_ODDS } from "./constants.ts"
+import { Bot, Message, sendMessage } from "https://deno.land/x/discordeno@17.0.0/mod.ts"
+import { LORD_ID, LORD_ODDS, TARGET_ID, TARGET_ODDS, ODDS, TEST_ID, TEST_ODDS } from "./constants.ts"
 
 type MessageType = "praise" | "violation" | "insult"
 
@@ -14,20 +14,21 @@ interface MessageSettings {
   type: MessageType
 }
 
-export async function send(from: Bot, to: Member) {
-  const { odds, type } = getMessageSettings(to.id)
+export async function send(bot: Bot, triggerMsg: Message) {
+  const to = triggerMsg.authorId
+  const { odds, type } = getMessageSettings(to)
   const doSend = Math.random() <= odds
   if (!doSend) return
 
-  await sendMessage(from, CHANNEL_ID, {
-    content: getMessage(type, `<@${to.id}>`)
+  await sendMessage(bot, triggerMsg.channelId, {
+    content: getMessage(type, `<@${to}>`)
   })
 }
 
 function getMessageSettings(id: BigInt): MessageSettings {
   switch (id) {
-    case CREATOR_ID: return {
-      odds: CREATOR_ODDS,
+    case TEST_ID: return {
+      odds: TEST_ODDS,
       type: "insult"
     }
 

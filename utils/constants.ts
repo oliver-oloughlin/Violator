@@ -1,3 +1,7 @@
+import "https://deno.land/std@0.160.0/dotenv/load.ts"
+
+export const DISCORD_TOKEN = Deno.env.get("DISCORD_TOKEN") as string
+
 export const TEST_ID = BigInt("0") // Oliver: "228262516470448128"
 
 export const LORD_ID = BigInt("344481159767392256")

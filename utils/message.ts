@@ -1,4 +1,4 @@
-import { Bot, Message, sendMessage } from "https://deno.land/x/discordeno@17.0.0/mod.ts"
+import { Bot, Message, sendMessage } from "../imports.ts"
 import { LORD_ID, LORD_ODDS, TARGET_ID, TARGET_ODDS, ODDS, TEST_ID, TEST_ODDS } from "./constants.ts"
 
 type MessageType = "praise" | "violation" | "insult"
@@ -76,7 +76,9 @@ function getMessage(type: MessageType, name: string) {
       `${name} got them inward biceps`,
       `${name}... now that's one dibbed looking motherfucker`,
       `Hey ${name}, your mom got a stanker, but at least she move it good`,
-      `${name} buddy, jump off a bridge real quick will ya?`
+      `${name} buddy, jump off a bridge real quick will ya?`,
+      `God created all beings, except ${name}, that is one unholy uggers lookin ass`,
+      `Yeah yeah ${name}, we get it, you have brain diarrhea`
     ],
     violation: [
       `${name} you have about as much of a hairline as you got bitches!`,
@@ -90,7 +92,8 @@ function getMessage(type: MessageType, name: string) {
       `Imagine being ${name}, waking up every day, and deciding to keep living after looking in the mirror?!?`,
       `Not even pedophiles could stand looking at ${name} when he was a kid`,
       `Normal peen: 8====D, ${name}'s peen: 8=D`,
-      `${name} lookin like the slowest wank ever`
+      `${name} lookin like the slowest wank ever`,
+      `${name} oh shit, I didn't know The Hunchback was a member of this server!`
     ]
   }
 

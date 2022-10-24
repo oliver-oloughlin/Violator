@@ -1,4 +1,4 @@
-import { Bot, Message, addReaction } from "https://deno.land/x/discordeno@17.0.0/mod.ts"
+import { Bot, Message, addReaction } from "../imports.ts"
 import { LORD_ID, TEST_ID } from "./constants.ts"
 
 export async function reactToMessage(bot: Bot, msg: Message) {

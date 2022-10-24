@@ -10,8 +10,8 @@ export const TARGET_ID = BigInt("611230736586113042")
 
 export const TEST_ODDS = 1
 
-export const LORD_ODDS = 0.25
+export const LORD_ODDS = 0.4
 
-export const TARGET_ODDS = 0.25
+export const TARGET_ODDS = 0.4
 
-export const ODDS = 0.1
+export const ODDS = 0.15

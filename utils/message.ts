@@ -78,7 +78,11 @@ function getMessage(type: MessageType, name: string) {
       `Hey ${name}, your mom got a stanker, but at least she move it good`,
       `${name} buddy, jump off a bridge real quick will ya?`,
       `God created all beings, except ${name}, that is one unholy uggers lookin ass`,
-      `Yeah yeah ${name}, we get it, you have brain diarrhea`
+      `Yeah yeah ${name}, we get it, you have brain diarrhea`,
+      `They say Ghandi never chose violence, except when he saw ${name}'s face, that's one punchable motherfucker!`,
+      `${name}'s got that Beyoncè look, if Beyoncè was a fat, ugly, retarded, rat stinking, monkey sweat, brainfartbrain, moron lookin ass`,
+      `${name}, you are why Avicii killed himself!`,
+      `${name} poo pee pee poop poo stink`
     ],
     violation: [
       `${name} you have about as much of a hairline as you got bitches!`,
@@ -93,7 +97,8 @@ function getMessage(type: MessageType, name: string) {
       `Not even pedophiles could stand looking at ${name} when he was a kid`,
       `Normal peen: 8====D, ${name}'s peen: 8=D`,
       `${name} lookin like the slowest wank ever`,
-      `${name} oh shit, I didn't know The Hunchback was a member of this server!`
+      `${name} oh shit, I didn't know The Hunchback was a member of this server!`,
+      `${name}, bro, come on, just do it, you know what I means, you've suffered enough you pathetic fuck`
     ]
   }
 

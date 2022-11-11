@@ -1,5 +1,5 @@
 import { Bot, Message, sendMessage } from "../imports.ts"
-import { LORD_ID, LORD_ODDS, TARGET_ID, TARGET_ODDS, ODDS, TEST_ID, TEST_ODDS } from "./constants.ts"
+import { LORD_ID, LORD_ODDS, TARGET_ID, TARGET_ODDS, ODDS, TEST_ID, TEST_ODDS, BANNED_CHANNELS } from "./constants.ts"
 
 type MessageType = "praise" | "violation" | "insult"
 
@@ -17,7 +17,7 @@ interface MessageSettings {
 export async function send(bot: Bot, triggerMsg: Message) {
   const to = triggerMsg.authorId
   const { odds, type } = getMessageSettings(to)
-  const doSend = Math.random() <= odds
+  const doSend = Math.random() <= odds && !BANNED_CHANNELS.includes(triggerMsg.channelId)
   if (!doSend) return
 
   await sendMessage(bot, triggerMsg.channelId, {
@@ -58,7 +58,9 @@ function getMessage(type: MessageType, name: string) {
       `${name} <-- This guy right here is the only acceptable ginger in the world, respect him!`,
       `${name} gimme that weiner, gobble gobble!`,
       `Henrik will never be the man that ${name} is!`,
-      `${name} gets 5 stars on my admin rating!`
+      `${name} gets 5 stars on my admin rating!`,
+      `${name}'s peen dwarfs any average black man's shlongdong!`,
+      `${name} dude gits trippel backy flip resets like he's stealing candy from a baby`
     ],
     insult: [
       `If I saw you on the same sidewalk as me ${name} I would literally cross the street faster 
@@ -82,7 +84,13 @@ function getMessage(type: MessageType, name: string) {
       `They say Ghandi never chose violence, except when he saw ${name}'s face, that's one punchable motherfucker!`,
       `${name}'s got that Beyoncè look, if Beyoncè was a fat, ugly, retarded, rat stinking, monkey sweat, brainfartbrain, moron lookin ass`,
       `${name}, you are why Avicii killed himself!`,
-      `${name} poo pee pee poop poo stink`
+      `${name} poo pee pee poop poo stink`,
+      `Noncetard alert! ${name}`,
+      `Yo ${name}, chill with the dibberdation will ya?`,
+      `${name} I smell the juice of a stinkin' quitter over here`,
+      `${name} just leave you fuckin cretin`,
+      `${name} damn bro, your parent's really didn't teach you when to just stay quiet, did they?`,
+      `${name} it would benefit everyone else here if you took a fucking showever every once in a while`
     ],
     violation: [
       `${name} you have about as much of a hairline as you got bitches!`,
@@ -98,7 +106,9 @@ function getMessage(type: MessageType, name: string) {
       `Normal peen: 8====D, ${name}'s peen: 8=D`,
       `${name} lookin like the slowest wank ever`,
       `${name} oh shit, I didn't know The Hunchback was a member of this server!`,
-      `${name}, bro, come on, just do it, you know what I means, you've suffered enough you pathetic fuck`
+      `${name}, bro, come on, just do it, you know what I means, you've suffered enough you pathetic fuck`,
+      `Yo ${name}, nobody would miss you if you just left the server, why u even here?`,
+      `Dude ${name}, listening to your mouth diarreah urr is nobody's fucking wish`
     ]
   }
 

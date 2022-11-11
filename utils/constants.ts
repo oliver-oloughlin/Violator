@@ -15,3 +15,5 @@ export const LORD_ODDS = 0.1
 export const TARGET_ODDS = 0.1
 
 export const ODDS = 0.03
+
+export const BANNED_CHANNELS = [BigInt("1016998893331943455")]
